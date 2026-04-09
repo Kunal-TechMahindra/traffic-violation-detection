@@ -1,0 +1,34 @@
+# ─────────────────────────────────────────────
+#  Traffic Violation Detection System
+#  Requirements — Python 3.9.5
+# ─────────────────────────────────────────────
+
+# ── Computer Vision ──────────────────────────
+opencv-python==4.9.0.80          # video frame reading & drawing
+ultralytics==8.2.0               # YOLOv8 vehicle detection
+deep-sort-realtime==1.3.2        # vehicle tracking with IDs
+
+# ── OCR (License Plate Reading) ──────────────
+easyocr==1.7.1                   # reads plate text from image
+
+# ── Data & Utilities ─────────────────────────
+numpy==1.26.4                    # array operations
+pandas==2.2.2                    # data handling / CSV exports
+matplotlib==3.9.0                # plotting speed graphs
+Pillow==10.3.0                   # image save/load helper
+
+# ── Django Backend & REST API ─────────────────
+Django==4.2.13                   # web framework
+djangorestframework==3.15.1      # REST API toolkit
+django-cors-headers==4.3.1       # allow React frontend to call API
+python-dotenv==1.0.1             # load .env variables
+
+# ── Database ─────────────────────────────────
+psycopg2-binary==2.9.9           # PostgreSQL driver
+
+# ── Async Task Queue ──────────────────────────
+celery==5.3.6                    # background video processing
+redis==5.0.4                     # message broker for Celery
+
+# ── Dev Utilities ─────────────────────────────
+ipython==8.18.1                  # better Python shell for testing (latest for Python 3.9)
